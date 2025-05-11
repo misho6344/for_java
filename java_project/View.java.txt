@@ -1,0 +1,111 @@
+package com.company;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.ColorPicker;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class View {
+    @FXML
+    TextField textfield;
+    @FXML
+    TextField textfield1;
+//    @FXML
+//    ColorPicker colorPicker;
+    @FXML
+    TextField textfield3;
+    @FXML
+    PasswordField password;
+
+
+
+//    public TextField getTextField() {
+//        return textField;
+//    }
+//
+
+    public void click(){
+        int a = Integer.parseInt(textfield1.getText());
+        int b = Integer.parseInt(textfield.getText());
+        int c = a*b;
+
+        String path = "C:\\result.txt";
+
+        try {
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(path));
+            bufferedWriter.write(c);
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+    public void pls_btn(){
+        int a = Integer.parseInt(textfield1.getText());
+        int b = Integer.parseInt(textfield.getText());
+        int c = a+b;
+        String path = "C:\\result.txt";
+
+        try {
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(path,true));
+            bufferedWriter.write(c);
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+    public void mns_btn(){
+        int a = Integer.parseInt(textfield1.getText());
+        int b = Integer.parseInt(textfield.getText());
+        int c = a-b;
+        String path = "C:\\result.txt";
+
+        try {
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(path,true));
+            bufferedWriter.write(c);
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+    public void dvd_btn(){
+        int a = Integer.parseInt(textfield1.getText());
+        int b = Integer.parseInt(textfield.getText());
+        int c = a/b;
+        String path = "C:\\result.txt";
+
+        try {
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(path,true));
+            bufferedWriter.write(c);
+            bufferedWriter.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+//    public void pck_btn(){
+//
+//
+//        String a = String.valueOf(colorpicker.getValue());
+//        String b = a.replace("0x","#");
+//        b = b.replaceAll("ff$","");
+//        textfield2.setText(b);
+//
+//
+//
+//    }
+
+
+
+
+
+}

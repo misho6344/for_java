@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="364.0" prefWidth="572.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.View">
+   <children>
+      <TextField fx:id="textfield1" layoutX="14.0" layoutY="89.0" prefHeight="43.0" prefWidth="159.0" promptText="რიცხვი1" style="-fx-background-radius: 0;">
+         <font>
+            <Font size="10.0" />
+         </font></TextField>
+      <TextField fx:id="textfield" layoutX="14.0" layoutY="38.0" prefHeight="43.0" prefWidth="159.0" promptText="რიცხვი2" style="-fx-background-radius: 0;">
+         <font>
+            <Font size="9.0" />
+         </font></TextField>
+      <Button layoutX="131.0" layoutY="132.0" mnemonicParsing="false" onAction="#click" prefHeight="26.0" prefWidth="38.0" text="*" />
+      <Button layoutX="17.0" layoutY="132.0" mnemonicParsing="false" onAction="#pls_btn" prefHeight="26.0" prefWidth="38.0" text="+" />
+      <Button layoutX="55.0" layoutY="132.0" mnemonicParsing="false" onAction="#mns_btn" prefHeight="26.0" prefWidth="38.0" text="-" />
+      <Button layoutX="93.0" layoutY="132.0" mnemonicParsing="false" onAction="#dvd_btn" prefHeight="26.0" prefWidth="38.0" text="/" />
+
+
+   </children>
+</AnchorPane>
